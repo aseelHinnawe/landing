@@ -1,1 +1,50 @@
 @import './base.css';
+
+body{
+    font-family: var(--mainFont);
+    background-color: #eee;
+}
+.header{
+    background-color: #fff;
+    padding:20px 0;
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.header .logo img{
+    width:35px;
+}
+.header .logo a{
+  color:var(--mainColor);
+}
+.nav ul{
+    display: flex;
+    gap:16px;
+}
+.nav ul li a{
+    color:#101928;
+}
+.active{
+    font-weight: 900;
+}
+.auth{
+    display: flex;
+    align-items: center;
+    gap:11px;
+}
+.auth a{
+  font-family: var(--subFont);
+  border:2px solid var(--mainColor);
+  padding:5.35px 24.18px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.auth .login{
+  color:var(--mainColor);
+}
+.auth .register{
+  color:#FFFFFF;
+  background-color: var(--mainColor);
+}
