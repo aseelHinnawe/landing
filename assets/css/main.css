@@ -12,6 +12,7 @@ body{
   display: flex;
   align-items: center;
   gap:5px;
+  flex-wrap: wrap;
 }
 .header .logo img{
     width:35px;
@@ -19,9 +20,13 @@ body{
 .header .logo a{
   color:var(--mainColor);
 }
+.menu{
+  display: none;
+}
 .nav ul{
     display: flex;
     gap:16px;
+    flex-wrap: wrap;
 }
 .nav ul li a{
     color:#101928;
@@ -33,6 +38,7 @@ body{
     display: flex;
     align-items: center;
     gap:11px;
+    flex-wrap: wrap;
 }
 .auth a{
   font-family: var(--subFont);
@@ -48,3 +54,33 @@ body{
   color:#FFFFFF;
   background-color: var(--mainColor);
 }
+@media screen and (max-width:992px){
+  .nav,
+  .auth{
+      display: none;
+  }
+  .menu{
+    display: block;
+  }
+}
+@media screen and (max-width:576px){
+  .container{
+    width:calc( 100% - 120px );
+  }
+  .header .logo img{
+    width:20px;
+  }
+  .header .logo a{
+    font-size:14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
